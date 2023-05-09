@@ -1,0 +1,153 @@
+:root{
+    --teal: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+    --yellow: hsl(39, 100%, 56%);
+    --red: hsl(0, 100%, 67%);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+   
+    font-family:'mainFont';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:0 0em 1em black;
+
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    color: white;
+    padding: 30px 0px;
+    max-width: 50%;
+}
+
+.result>p{
+    margin: 0px;
+}
+
+.summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.scored-text{
+    text-align: center;
+    padding: 20px 0px;
+    max-width: 70%;
+}
+
+.main-num{
+    font-size: 4rem;
+    margin: 0px;
+    margin-bottom: -20px;
+    margin-top: 25px;
+}
+
+.great{
+    font-size: 1.5rem;
+}
+
+.circle{
+    background-color: red;
+    background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.part{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--blue);
+}
+.part>span{
+    color: white;
+}
+
+.light-transp{
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.transp{
+    color: hsla(0, 0%, 100%, 0.4);
+}
+
+#first>.text{
+    color: var(--red);
+    background-color: #fff;
+}
+#second>.text{
+    color: var(--yellow);
+}
+#third>.text{
+    color: var(--teal);
+}
+#fourth>.text{
+    color: var(--blue);   
+}
+
+.fw5{font-weight: 500;}
+.fw7{font-weight: 700;}
+.fw8{font-weight: 800;}
+
+button{
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    margin: 20px 0px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+}
+
+button:hover{
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@font-face{
+    src: url(../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf);
+    font-family: 'mainFont';
+}
+
+@media (max-width:375px){
+    .container{
+        flex-direction: column;
+    }
+}

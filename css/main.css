@@ -3,10 +3,18 @@
     --blue: hsl(234, 85%, 45%);
     --yellow: hsl(39, 100%, 56%);
     --red: hsl(0, 100%, 67%);
+    --bg-teal: hsla(166, 100%, 37%, 0.1);
+    --bg-blue: hsla(234, 85%, 45%, 0.1);
+    --bg-yellow:hsla(39, 100%, 56%, 0.1);
+    --bg-red:hsla(0, 100%, 67%, 0.1);
 }
 
 html{
     height: 100%;
+}
+
+.lefty{
+    display: flex;
 }
 
 body{
@@ -29,7 +37,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow:0 0em 1em black;
+    box-shadow:0 0px 100px rgb(203, 203, 203);
 
 }
 
@@ -50,6 +58,10 @@ body{
     margin: 0px;
 }
 
+.your-result{
+    font-size: 1.2rem;
+}
+
 .summary{
     display: flex;
     justify-content: center;
@@ -61,7 +73,7 @@ body{
 .scored-text{
     text-align: center;
     padding: 20px 0px;
-    max-width: 70%;
+    max-width: 65%;
 }
 
 .main-num{
@@ -94,10 +106,7 @@ body{
     width: 80%;
     padding: 10px;
     margin: 5px;
-    background-color: var(--blue);
-}
-.part>span{
-    color: white;
+    border-radius: 10px;
 }
 
 .light-transp{
@@ -108,23 +117,34 @@ body{
     color: hsla(0, 0%, 100%, 0.4);
 }
 
-#first>.text{
+#first{
     color: var(--red);
-    background-color: #fff;
+    background-color: var(--bg-red);
 }
-#second>.text{
+#second{
     color: var(--yellow);
+    background-color: var(--bg-yellow);
 }
-#third>.text{
+#third{
     color: var(--teal);
+    background-color: var(--bg-teal);
 }
-#fourth>.text{
-    color: var(--blue);   
+#fourth{
+    color: var(--blue);
+    background-color: var(--bg-blue);
 }
 
 .fw5{font-weight: 500;}
 .fw7{font-weight: 700;}
 .fw8{font-weight: 800;}
+
+.percent{
+    color: black;
+}
+
+.percent>span{
+
+}
 
 button{
     padding: 20px;
@@ -142,7 +162,7 @@ button:hover{
 }
 
 @font-face{
-    src: url(../fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf);
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
     font-family: 'mainFont';
 }
 
@@ -150,4 +170,16 @@ button:hover{
     .container{
         flex-direction: column;
     }
+}
+
+svg{
+    margin: 0px 10px;
+}
+
+span{
+    color: hsla(0, 0%, 0%, 0.3)!important;
+}
+
+h2{
+    width: 80%;
 }

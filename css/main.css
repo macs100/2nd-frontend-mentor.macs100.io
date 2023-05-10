@@ -70,6 +70,10 @@ body{
     width: 50%;
 }
 
+.summary>div{
+    margin: 10px 0px;
+}
+
 .scored-text{
     text-align: center;
     padding: 20px 0px;
@@ -150,7 +154,7 @@ button{
     padding: 20px;
     width: 80%;
     border-radius: 30px;
-    margin: 20px 0px;
+    margin-top: 50px;
     background: hsl(224, 30%, 27%);
     color: white;
     border: none;
@@ -182,4 +186,5 @@ span{
 
 h2{
     width: 80%;
+    margin-top: -30px;
 }
